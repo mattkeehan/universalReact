@@ -10,8 +10,6 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouter = require('react-router');
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20,56 +18,33 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var AppComponent = function (_React$Component) {
-    _inherits(AppComponent, _React$Component);
+var AboutComponent = function (_React$Component) {
+    _inherits(AboutComponent, _React$Component);
 
-    function AppComponent() {
-        _classCallCheck(this, AppComponent);
+    function AboutComponent() {
+        _classCallCheck(this, AboutComponent);
 
-        return _possibleConstructorReturn(this, Object.getPrototypeOf(AppComponent).apply(this, arguments));
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(AboutComponent).apply(this, arguments));
     }
 
-    _createClass(AppComponent, [{
+    _createClass(AboutComponent, [{
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
                 'div',
                 null,
                 _react2.default.createElement(
-                    'h2',
+                    'p',
                     null,
-                    'Welcome to my App'
-                ),
-                _react2.default.createElement(
-                    'ul',
-                    null,
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/' },
-                            'Home'
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'li',
-                        null,
-                        _react2.default.createElement(
-                            _reactRouter.Link,
-                            { to: '/about' },
-                            'About'
-                        )
-                    )
-                ),
-                this.props.children
+                    'A little bit about me.'
+                )
             );
         }
     }]);
 
-    return AppComponent;
+    return AboutComponent;
 }(_react2.default.Component);
 
-exports.default = AppComponent;
+exports.default = AboutComponent;
 
-//# sourceMappingURL=app-compiled.js.map
+//# sourceMappingURL=about-compiled.js.map
